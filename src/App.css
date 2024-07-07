@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    
+  }
+:root {
+  --bg-color: rgb(210,210,210);
+  --blueBrand: rgba(37, 141, 167, 1);
+
+}
+#root {
+  width: 100%;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgb(49, 151, 176);
+  background-color: var(--bg-color);
+}
+main {
+  padding: 0 5em 0 5em;
+}
+a { 
+position: relative;
+left: 25%; top: 1em;
+text-decoration: none;
+color: rgb(55, 20, 79);
+border: 1px solid black;
+border-radius: 0;
+padding: 0.2em 1em 0.2em 1em;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 1rem;
+}
+.leftBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 45%;
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+}
+.writeBox {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+.tableBox {
+  border: 2px solid;
+  border-color: var(--blueBrand);
+  min-height: 75vh;
+}
+.submitBtn {
+  width: 10em;
+}
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+form {
+  h3 {
+    background-color: rgb(202, 239, 227);
+  }
+}
+
+label {
+  font-size: 1.1em;
+  text-align: start;
+  display: inline-block;
+  width: 7em;
+}
+input, select {
+  font-size: 1.1em;
+  padding-left: 0.5em;
+  margin-bottom: 2rem;
+  color: var(--blueBrand);
+  font-weight: 500;
+  border-radius: 0%;
+  width: 16rem;
+  height: 2.1rem;
+  background-color: white;
+}
+input::placeholder {
+  font-size: 1.1em;
+  color: rgba(37, 141, 167) !important; 
+  opacity: 1;
+}
+
+section p {
+  text-align: end;
+}
+
+table {
+  padding-top: 1em;
+  padding-right: 1em;
+  width: 100%;
+  color: black;
+  border-collapse: collapse;
+}
+
+th {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  font-weight: 600;
+}
+td {
+  border-top-color: rgb(169, 168, 168);
+  border-top-width: 1px;
+  border-top-style: solid;
+  box-sizing: border-box;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+.container p {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+}
+
+button {
+  text-align: center;
+  font-size: 1.1rem;
+  width: 7rem;
+  padding: 0.5em 2em 0.5em 2em;
+  background-color: var(--bg-color);
+  color: var(--blueBrand);
+  border-radius: 0;
+}
+button:hover {
+  box-shadow: 0.3rem;
+}
+.btnBox {
+  width: 23rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  box-sizing: border-box;
+}
+
+
+@media ( 900px < width <= 1100px) {
+  main {
+    padding: 0 2em 0 2em;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (width <= 900px) {
+  html, body, main {
+    width: 100%;
+  }
+  main {
+    padding: 0 2em 0 2em;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftBox {
+    width: 100%;
+    align-items: center;
+    div {
+      justify-content: center;
+    }
+  }
+  .writeBox {
+    width: 100%;
+}
+}
+
+@media (width <= 450px) {
+  html, body, main {
+    width: 100%;
+  }
+  main {
+    padding: 0;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftBox {
+    width: 100%;
+    align-items: center;
+    div {
+      justify-content: center;
+    }
+  }
+  .writeBox {
+    width: 100%;
+  }
+  label {
+    width: 6em;
+  }
+  input, select {
+    font-size: 1em;
+    padding-left: 0.5em;
+    margin-bottom: 2rem;
+    width: 12.5rem;
+    height: 2.1rem;
+  }
+
+}
+
+
